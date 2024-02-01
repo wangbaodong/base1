@@ -114,4 +114,14 @@ freertos\entry.o: C:\Keil_v5.36\ARM\ARMCC\Bin\..\include\math.h
 freertos\entry.o: ..\Drivers\BSP\sht30\sht30.h
 freertos\entry.o: ../Core/Inc/adc.h
 freertos\entry.o: ../Core/Inc/iwdg.h
+freertos\entry.o: ../Core/Inc/sdio.h
+freertos\entry.o: ..\FATFS\App\fatfs.h
+freertos\entry.o: ..\Middlewares\Third_Party\FatFs\src\ff.h
+freertos\entry.o: ..\Middlewares\Third_Party\FatFs\src\integer.h
+freertos\entry.o: ..\FATFS\Target\ffconf.h
+freertos\entry.o: ..\FATFS\Target\bsp_driver_sd.h
+freertos\entry.o: ..\FATFS\Target\fatfs_platform.h
+freertos\entry.o: ..\Middlewares\Third_Party\FatFs\src\ff_gen_drv.h
+freertos\entry.o: ..\Middlewares\Third_Party\FatFs\src\diskio.h
+freertos\entry.o: ..\FATFS\Target\sd_diskio.h
 freertos\entry.o: ../Core/Inc/entry.h

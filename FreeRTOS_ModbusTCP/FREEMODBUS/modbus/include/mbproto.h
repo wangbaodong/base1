@@ -62,7 +62,7 @@ PR_BEGIN_EXTERN_C
 #define MB_FUNC_READ_CONFIG_ADAPTER           (  0x0a )
 #define MB_FUNC_SET_ADAPTER_TIME							(  0x0b )
 #define MB_FUNC_SET_ADAPTER_IP								(  0x0c )
-#define MB_FUNC_CALL_BACK											(  0x0d )
+#define MB_FUNC_CALL_BACK								(  0x0d )
 /* ----------------------- Type definitions ---------------------------------*/
 
     typedef enum

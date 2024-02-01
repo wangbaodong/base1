@@ -79,9 +79,11 @@ freertos\gpio.o: ../Middlewares/Third_Party/LwIP/src/include/lwip/err.h
 freertos\gpio.o: ../Middlewares/Third_Party/LwIP/system/arch/sys_arch.h
 freertos\gpio.o: ../FREEMODBUS/modbus/include/mbport.h
 freertos\gpio.o: ../FREEMODBUS/modbus/include/mbproto.h
-freertos\gpio.o: ..\FatFs\ff_gen_drv.h
-freertos\gpio.o: ..\FatFs\diskio.h
-freertos\gpio.o: ..\FatFs\integer.h
-freertos\gpio.o: ..\FatFs\ff.h
-freertos\gpio.o: ..\FatFs\ffconf.h
-freertos\gpio.o: ..\FatFs\drivers\sd_diskio.h
+freertos\gpio.o: ..\Middlewares\Third_Party\FatFs\src\ff_gen_drv.h
+freertos\gpio.o: ..\Middlewares\Third_Party\FatFs\src\diskio.h
+freertos\gpio.o: ..\Middlewares\Third_Party\FatFs\src\integer.h
+freertos\gpio.o: ..\Middlewares\Third_Party\FatFs\src\ff.h
+freertos\gpio.o: ..\FATFS\Target\ffconf.h
+freertos\gpio.o: ..\FATFS\Target\bsp_driver_sd.h
+freertos\gpio.o: ..\FATFS\Target\fatfs_platform.h
+freertos\gpio.o: ..\FATFS\Target\sd_diskio.h

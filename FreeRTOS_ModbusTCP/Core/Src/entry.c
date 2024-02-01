@@ -18,7 +18,7 @@ void userDef_main(void *argument){
 		sdk_addLog(Error,"er",66);
 		sdk_addLog(Data,"dat",66);
 		sdk_addDataToReg(1,0x22);
-		sdk_delayMs(2000);
+		sdk_delayMs(1000);
 	}
 }
 

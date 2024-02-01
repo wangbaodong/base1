@@ -16,6 +16,8 @@
 #include "sht30.h"
 #include "adc.h"
 #include "iwdg.h"
+#include "sdio.h"
+#include "fatfs.h"
 /* 日志信息中的可填写的字符串的长度 */
 #define MAX_COMMAND_LENGTH 20
 #define MAX_HISTORY_COMMANDS 10

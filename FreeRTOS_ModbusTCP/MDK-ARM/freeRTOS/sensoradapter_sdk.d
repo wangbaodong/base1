@@ -114,3 +114,13 @@ freertos\sensoradapter_sdk.o: C:\Keil_v5.36\ARM\ARMCC\Bin\..\include\math.h
 freertos\sensoradapter_sdk.o: ..\Drivers\BSP\sht30\sht30.h
 freertos\sensoradapter_sdk.o: ../Core/Inc/adc.h
 freertos\sensoradapter_sdk.o: ../Core/Inc/iwdg.h
+freertos\sensoradapter_sdk.o: ../Core/Inc/sdio.h
+freertos\sensoradapter_sdk.o: ..\FATFS\App\fatfs.h
+freertos\sensoradapter_sdk.o: ..\Middlewares\Third_Party\FatFs\src\ff.h
+freertos\sensoradapter_sdk.o: ..\Middlewares\Third_Party\FatFs\src\integer.h
+freertos\sensoradapter_sdk.o: ..\FATFS\Target\ffconf.h
+freertos\sensoradapter_sdk.o: ..\FATFS\Target\bsp_driver_sd.h
+freertos\sensoradapter_sdk.o: ..\FATFS\Target\fatfs_platform.h
+freertos\sensoradapter_sdk.o: ..\Middlewares\Third_Party\FatFs\src\ff_gen_drv.h
+freertos\sensoradapter_sdk.o: ..\Middlewares\Third_Party\FatFs\src\diskio.h
+freertos\sensoradapter_sdk.o: ..\FATFS\Target\sd_diskio.h

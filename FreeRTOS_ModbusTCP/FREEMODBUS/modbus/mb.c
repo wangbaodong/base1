@@ -453,7 +453,7 @@ eMBPoll( void )
 
         case EV_EXECUTE:
             ucTCPFunctionCode = ucMBTCPFrame[MB_PDU_FUNC_OFF];
-						if(ucTCPFunctionCode==0x09 || ucTCPFunctionCode==0x0a || ucTCPFunctionCode==0x0b|| ucTCPFunctionCode==0x0c|| ucTCPFunctionCode==0x0d)
+						if(ucTCPFunctionCode==0x09 || ucTCPFunctionCode==0x0a || ucTCPFunctionCode==0x0b|| ucTCPFunctionCode==0x0c)
 						{saveCommand(ucMBTCPFrame,usTCPLength);}
             eException = MB_EX_ILLEGAL_FUNCTION;
             for( i = 0; i < MB_FUNC_HANDLERS_MAX; i++ )

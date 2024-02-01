@@ -38,10 +38,8 @@ extern RTC_TimeTypeDef GetTime;
 extern RTC_DateTypeDef GetDate;
 LogCacheTypeDef logCache[MAX_LOG_ENTRIES];
 uint16_t logCallbackCount=0;
-extern osSemaphoreId_t LogSemaphoreHandle;
 void sdk_addLog(Log_TypeDef logtpye,const char * buff,uint16_t value){
-  if (logCallbackCount < MAX_LOG_ENTRIES ) {
-		osSemaphoreAcquire(LogSemaphoreHandle,osWaitForever);
+  if (logCallbackCount < MAX_LOG_ENTRIES) {
     // 将日志添加到缓存
 		/* 记录此刻时间 */
 		HAL_RTC_GetTime(&hrtc, &GetTime, RTC_FORMAT_BIN);
@@ -58,7 +56,6 @@ void sdk_addLog(Log_TypeDef logtpye,const char * buff,uint16_t value){
     strncpy(logCache[logCallbackCount].info, buff, MAX_LOG_LENGTH - 1);
     logCache[logCallbackCount].info[MAX_LOG_LENGTH - 1] = '\0'; // 确保字符串以 null 结尾
     logCallbackCount++;
-		osSemaphoreRelease(LogSemaphoreHandle);
     }
 }
 /* RS485初始化 */
@@ -81,7 +78,8 @@ void sdk_sysInit(void){
 	MX_TIM3_Init();
 	I2C_EE_Init();
 	RTC_CLK_Config();
-
+  MX_SDIO_SD_Init();
+//  MX_FATFS_Init();
 }
 /* OS初始化 传入另一个函数作为数据处理任务*/
 void sdk_startMain(void (*osThreadFunc_t) (void *argument)){

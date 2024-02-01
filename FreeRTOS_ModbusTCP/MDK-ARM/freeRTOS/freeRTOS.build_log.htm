@@ -21,17 +21,20 @@ Target DLL:      Segger\JL2CM3.dll V2.99.40.0
 Dialog DLL:      TCM.DLL V1.53.0.0
  
 <h2>Project:</h2>
-C:\Users\S\Desktop\20240129\FreeRTOS_ModbusTCP_Log_IWDG_DHT11\FreeRTOS_ModbusTCP\MDK-ARM\freeRTOS.uvprojx
+C:\Users\S\Desktop\FreeRTOS_ModbusTCP_Log_IWDG_DHT11\FreeRTOS_ModbusTCP\MDK-ARM\freeRTOS.uvprojx
 Project File Date:  01/29/2024
 
 <h2>Output:</h2>
 *** Using Compiler 'V5.06 update 7 (build 960)', folder: 'C:\Keil_v5.36\ARM\ARMCC\Bin'
 Build target 'freeRTOS'
-compiling bsp_sdio_sd.c...
+compiling freertos.c...
+../Core/Src/freertos.c(404): warning:  #188-D: enumerated type mixed with another type
+  				res_sd = FATFS_LinkDriver(&SD_Driver, SDPath);
+../Core/Src/freertos.c: 1 warning, 0 errors
 linking...
-Program Size: Code=120416 RO-data=62004 RW-data=800 ZI-data=91024  
+Program Size: Code=120684 RO-data=62120 RW-data=808 ZI-data=87800  
 FromELF: creating hex file...
-"freeRTOS\freeRTOS.axf" - 0 Error(s), 0 Warning(s).
+"freeRTOS\freeRTOS.axf" - 0 Error(s), 1 Warning(s).
 
 <h2>Software Packages used:</h2>
 

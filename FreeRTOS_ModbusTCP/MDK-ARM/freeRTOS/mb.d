@@ -114,6 +114,16 @@ freertos\mb.o: C:\Keil_v5.36\ARM\ARMCC\Bin\..\include\math.h
 freertos\mb.o: ..\Drivers\BSP\sht30\sht30.h
 freertos\mb.o: ../Core/Inc/adc.h
 freertos\mb.o: ../Core/Inc/iwdg.h
+freertos\mb.o: ../Core/Inc/sdio.h
+freertos\mb.o: ..\FATFS\App\fatfs.h
+freertos\mb.o: ..\Middlewares\Third_Party\FatFs\src\ff.h
+freertos\mb.o: ..\Middlewares\Third_Party\FatFs\src\integer.h
+freertos\mb.o: ..\FATFS\Target\ffconf.h
+freertos\mb.o: ..\FATFS\Target\bsp_driver_sd.h
+freertos\mb.o: ..\FATFS\Target\fatfs_platform.h
+freertos\mb.o: ..\Middlewares\Third_Party\FatFs\src\ff_gen_drv.h
+freertos\mb.o: ..\Middlewares\Third_Party\FatFs\src\diskio.h
+freertos\mb.o: ..\FATFS\Target\sd_diskio.h
 freertos\mb.o: ../FREEMODBUS/modbus/include/mbconfig.h
 freertos\mb.o: ../FREEMODBUS/modbus/include/mbframe.h
 freertos\mb.o: ../FREEMODBUS/modbus/include/mbfunc.h
